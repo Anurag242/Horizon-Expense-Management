@@ -1,0 +1,100 @@
+:root {
+  /* Neutral Palette */
+  --color-neutral-98: #F8F8F8;
+  --color-neutral-95: #F4F6F5;
+  --color-neutral-92: #EDEDED;
+  --color-neutral-90: #E8E9E9;
+  --color-neutral-80: #D1D2D3;
+  --color-neutral-70: #BBBCBD;
+  --color-neutral-60: #A4A5A7;
+  --color-neutral-50: #8D8F90;
+  --color-neutral-40: #76797A;
+  --color-neutral-30: #5F6264;
+  --color-neutral-20: #494C4E;
+  --color-neutral-10: #323538;
+  --color-neutral-100: #1B1F22;
+
+  /* Primary Palette (Purple) */
+  --color-primary-50: #F0E5F8;
+  --color-primary-100: #E1CBF1;
+  --color-primary-200: #D3B2EA;
+  --color-primary-300: #C498E3;
+  --color-primary-400: #B57EDC;
+  --color-primary-500: #9165B0;
+  --color-primary-600: #6D4C84;
+  --color-primary-700: #483258;
+  --color-primary-800: #24192C;
+
+  /* Secondary Palette (Slate/Blue) */
+  --color-secondary-50: #B9B4CA;
+  --color-secondary-100: #9B9DB6;
+  --color-secondary-200: #82829E;
+  --color-secondary-300: #686888;
+  --color-secondary-400: #575779;
+  --color-secondary-500: #434468;
+  --color-secondary-600: #343758;
+  --color-secondary-700: #232643;
+  --color-secondary-800: #14162E;
+  --color-secondary-900: #00001A;
+
+  /* Functional Colors */
+  --color-brand-primary: #B57EDC;
+  --color-brand-secondary: #14162E;
+  --color-success: #22B470;
+  --color-error: #EC2025;
+  --color-pending: #FFA500;
+  
+  /* Basics */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Spacing Tokens (4px Scale) */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+
+  /* Border Radius */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  /* Typography Sizes */
+  --font-size-h1: 36px;
+  --font-size-h2: 36px;
+  --font-size-h3: 24px;
+  --font-size-h4: 20px;
+  
+  --font-size-subtitle-1: 18px;
+  --font-size-subtitle-2: 16px;
+  --font-size-subtitle-4: 13px;
+
+  --font-size-body-1: 16px;
+  --font-size-body-2: 14px;
+  --font-size-body-3: 12px;
+
+  --font-size-button-lg: 16px;
+  --font-size-button-md: 14px;
+  --font-size-button-sm: 12px;
+
+  --font-size-input: 16px;
+  --font-size-table-header: 16px;
+  --font-size-table-body: 14px;
+  --font-size-label: 14px;
+  --font-size-caption-12: 12px;
+  --font-size-caption-10: 10px;
+  --font-size-overline: 10px;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}

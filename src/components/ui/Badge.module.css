@@ -1,0 +1,54 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: var(--radius-xs);
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Status Variants */
+.approved {
+  background-color: rgba(34, 180, 112, 0.1);
+  color: var(--color-success);
+}
+
+.pending {
+  background-color: rgba(255, 165, 0, 0.1);
+  color: var(--color-pending);
+}
+
+.rejected {
+  background-color: rgba(236, 32, 37, 0.1);
+  color: var(--color-error);
+}
+
+.hold {
+  background-color: rgba(0, 0, 255, 0.1); /* Standard blue for On Hold */
+  color: #0000FF;
+}
+
+/* Functional Variants */
+.error {
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+  background-color: transparent;
+}
+
+.success {
+  border: 1px solid var(--color-success);
+  color: var(--color-success);
+  background-color: transparent;
+}
+
+/* Request Link Style */
+.request {
+  padding: 0;
+  background: none;
+  color: var(--color-neutral-30);
+  text-decoration: underline;
+  font-weight: 600;
+}

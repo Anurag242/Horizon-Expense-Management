@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.label {
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-black);
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: stretch;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-neutral-90);
+  border-radius: var(--radius-xs);
+  transition: all 0.2s ease;
+  overflow: hidden;
+  min-height: 44px;
+}
+
+.inputWrapper:focus-within {
+  border-color: var(--color-black);
+}
+
+.inputField {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  font-size: var(--font-size-input);
+  color: var(--color-black);
+  outline: none;
+  width: 100%;
+}
+
+.inputField::placeholder {
+  color: var(--color-neutral-80);
+}
+
+/* Addons */
+.addon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  background-color: var(--color-neutral-98);
+  color: var(--color-neutral-50);
+  font-size: var(--font-size-input);
+  border-right: 1px solid var(--color-neutral-90);
+}
+
+.addonRight {
+  border-right: none;
+  border-left: 1px solid var(--color-neutral-90);
+}
+
+/* TextArea */
+.textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Icons */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  color: var(--color-neutral-70);
+}
