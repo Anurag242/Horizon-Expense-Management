@@ -15,8 +15,7 @@ import {
   Upload,
   UserSquare2,
   Settings,
-  LogOut,
-  CheckSquare
+  LogOut
 } from "lucide-react";
 
 export default function Sidebar() {

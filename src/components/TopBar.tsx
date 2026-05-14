@@ -1,7 +1,6 @@
 import styles from "./TopBar.module.css";
-import logoImg from "../assets/logo.png";
 import uaeFlag from "../assets/uae_flag.png";
-import { Search, Bell, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export default function TopBar() {
   return (
