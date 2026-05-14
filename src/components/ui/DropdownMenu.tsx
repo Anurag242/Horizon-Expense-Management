@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./DropdownMenu.module.css";
 
 interface DropdownMenuProps {
