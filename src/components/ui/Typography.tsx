@@ -12,6 +12,7 @@ interface TypographyProps {
   variant: TypographyVariant;
   children: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
   as?: React.ElementType;
 }
 
@@ -19,6 +20,7 @@ const Typography = ({
   variant, 
   children, 
   className = "", 
+  style,
   as: Component = "span" 
 }: TypographyProps) => {
   const typographyClasses = [
@@ -27,7 +29,7 @@ const Typography = ({
   ].join(" ");
 
   return (
-    <Component className={typographyClasses}>
+    <Component className={typographyClasses} style={style}>
       {children}
     </Component>
   );

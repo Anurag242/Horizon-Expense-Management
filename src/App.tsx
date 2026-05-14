@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import Claims from "./pages/Claims";
 import VendorPayment from "./pages/VendorPayment";
 import AddInvoice from "./pages/AddInvoice";
+import DesignSystem from "./pages/DesignSystem";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/claims" element={<Claims />} />
         <Route path="/vendor" element={<VendorPayment />} />
         <Route path="/vendor/add" element={<AddInvoice />} />
+        <Route path="/design-system" element={<DesignSystem />} />
       </Routes>
     </BrowserRouter>
   );
