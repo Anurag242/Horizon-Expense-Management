@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-neutral-98);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  text-align: center;
+}
+
+.illustration {
+  margin-bottom: 40px;
+  color: var(--color-brand-primary);
+  opacity: 0.8;
+}
+
+.title {
+  margin-bottom: 16px;
+  color: var(--color-black);
+}
+
+.description {
+  margin-bottom: 32px;
+  color: var(--color-neutral-50);
+  max-width: 480px;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+}
