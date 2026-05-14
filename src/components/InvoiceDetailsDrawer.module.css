@@ -1,0 +1,374 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+}
+
+.drawer {
+  width: 600px;
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.3s ease-out;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.header {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.closeBtn:hover {
+  background-color: #f3f4f6;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1b203c;
+  margin: 0;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.statusBadge {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 80px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.statusPaid {
+  background-color: #ecfdf5;
+  color: #10b981;
+}
+
+.statusPending {
+  background-color: #fff7ed;
+  color: #f97316;
+}
+
+.scrollContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fieldGroup label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.inputBox {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b203c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gridRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.textArea {
+  min-height: 100px;
+  align-items: flex-start;
+}
+
+.receiptsSection {
+  margin-top: 8px;
+}
+
+.sectionLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.receiptCard {
+  width: 120px;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.pdfBox {
+  background-color: #f87171;
+  height: 120px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.pdfLabel {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.receiptActions {
+  display: flex;
+  gap: 16px;
+  padding: 0 4px;
+  margin-top: 8px;
+}
+
+.actionIcon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.footer {
+  padding: 20px 24px;
+  border-top: 1px solid #f3f4f6;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  background-color: #fff;
+}
+
+.scheduleBtn {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  color: #1b203c;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.payNowBtn {
+  padding: 10px 24px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.submitBtn {
+  padding: 10px 24px;
+  background-color: #c5c5c5;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: not-allowed;
+  border-radius: 2px;
+}
+
+.submitBtnActive {
+  background-color: #000;
+  cursor: pointer;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1b203c;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.asterisk {
+  color: #ef4444;
+  margin-left: 4px;
+}
+
+.dropdownBox {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  z-index: 10;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownItem {
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b203c;
+  cursor: pointer;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.dropdownItem:last-child {
+  border-bottom: none;
+}
+
+.dropdownItem:hover {
+  background-color: #f9fafb;
+}
+
+.drawerTabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.drawerTab {
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  color: #1b203c;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.drawerTabActive {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+  box-shadow: 2px 2px 0px #B57EDC;
+}
+
+.radioRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 24px;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b203c;
+  cursor: pointer;
+}
+
+.radioCircle {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #008000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radioInner {
+  width: 8px;
+  height: 8px;
+  background-color: #008000;
+  border-radius: 50%;
+}
+
+.radioEmpty {
+  border-color: #008000;
+}.relative {
+  position: relative;
+}

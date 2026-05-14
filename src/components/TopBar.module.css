@@ -1,0 +1,69 @@
+.topbar {
+  height: 72px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+  border-bottom: 1px solid #e5e7eb;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 260px; /* Width of fixed sidebar */
+  z-index: 900;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.languageSelector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.flagIcon {
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  width: 32px;
+  height: 32px;
+}
+
+.flagImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.languageText {
+  font-family: 'Arial', sans-serif; /* Arabic font */
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-left: 8px;
+}
+
+.welcomeText {
+  font-size: 14px;
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topLogo {
+  height: 24px;
+  width: auto;
+}
+
+.welcomeText strong {
+  color: #111827;
+  font-family: 'Kurale', serif;
+  font-weight: 500;
+}

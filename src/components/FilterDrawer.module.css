@@ -1,0 +1,340 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 260px; /* right of sidebar */
+  width: 500px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  z-index: 1001;
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition: transform 0.25s ease, visibility 0.25s ease;
+  pointer-events: none;
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.08);
+}
+
+.drawer.open {
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: all;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.titleBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.clearBtn {
+  background: none;
+  border: none;
+  color: #008000;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.clearBtn:hover {
+  box-shadow: 4px 4px 0px #B57EDC;
+  transform: translate(-2px, -2px);
+  text-decoration: none;
+}
+
+.clearBtn:active {
+  transform: translate(0, 0);
+  box-shadow: none;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+/* Filter Options */
+.filterList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filterItem {
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.filterItemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: background-color 0.15s ease;
+  user-select: none;
+}
+
+.filterItemHeader:hover {
+  background-color: #f9fafb;
+}
+
+.filterItemLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b203c;
+}
+
+.chevron {
+  color: #1b203c;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.filterItemBody {
+  border-top: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Quick Date Buttons */
+.quickDateRow {
+  display: flex;
+  gap: 8px;
+}
+
+.quickBtn {
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  color: #374151;
+  cursor: pointer;
+  border-radius: 0;
+  transition: all 0.2s ease;
+}
+
+.quickBtn:hover {
+  box-shadow: 4px 4px 0px #B57EDC;
+  transform: translate(-2px, -2px);
+}
+
+.quickBtn:active {
+  transform: translate(0, 0);
+  box-shadow: none;
+}
+
+.quickBtnActive {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+/* Date Inputs */
+.dateInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dateInputRow {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+.dateInput {
+  flex: 1;
+  border: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #374151;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Search */
+.searchRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 10px 14px;
+  background-color: #ffffff;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #374151;
+  width: 100%;
+  background: transparent;
+}
+
+.searchInput::placeholder {
+  color: #9ca3af;
+}
+
+/* Checklist */
+.checkList {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.checkRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4px;
+  cursor: pointer;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.15s ease;
+}
+
+.checkRow:last-child {
+  border-bottom: none;
+}
+
+.checkRow:hover {
+  background-color: #f9fafb;
+}
+
+.checkRowLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1b203c;
+}
+
+.userId {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.checkRowLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b203c;
+}
+
+/* Green Checkbox */
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #008000;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #ffffff;
+}
+
+.checkboxChecked {
+  background-color: #ffffff;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.applyBtn {
+  background-color: #9ca3af;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.applyBtnActive {
+  background-color: #000000;
+}
+
+.applyBtn:hover {
+  box-shadow: 4px 4px 0px #B57EDC;
+  transform: translate(-2px, -2px);
+}
+
+.applyBtn:active {
+  transform: translate(0, 0);
+  box-shadow: none;
+}
